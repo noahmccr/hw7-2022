@@ -20,7 +20,7 @@ document.querySelector("#play").addEventListener("click", function() {
     video.play();
 
     // Update volume information
-    document.getElementById("volume").innerText = video.volume;
+    document.getElementById("volume").innerText = (video.volume * 100).toFixed(0) + "%";
 });
 
 // Pause the video
